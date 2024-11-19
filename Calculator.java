@@ -58,10 +58,10 @@ public class Calculator {
                 result = subtract(num1, num2);
                 break;
             case 3:
-             //   result = multiply(num1, num2);
+                result = multiply(num1, num2);
                 break;
             case 4:
-              //  result = divide(num1, num2);
+                result = divide(num1, num2);
                 break;
             case 5:
               //  result = modulus(num1, num2);
