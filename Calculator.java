@@ -24,7 +24,18 @@ public class Calculator {
         return a / b;
     }
     // Modulus
-   
+    public static double modulus(double a, double b) {
+        if (b == 0) {
+            System.out.println("Error: Modulus by zero is not allowed.");
+            return Double.NaN;
+        }
+        return a % b;
+    }
+
+    // Exponentiation
+    public static double power(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
 
    
 
@@ -64,10 +75,10 @@ public class Calculator {
                 result = divide(num1, num2);
                 break;
             case 5:
-              //  result = modulus(num1, num2);
+                result = modulus(num1, num2);
                 break;
             case 6:
-               // result = power(num1, num2);
+                result = power(num1, num2);
                 break;
             default:
                 System.out.println("Invalid choice. Please choose a valid operation.");
